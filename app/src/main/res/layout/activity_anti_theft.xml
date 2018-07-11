@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/AntiTheftLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AntiTheft">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3385ff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"
+
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/toolberdashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/blocker"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FFF"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/esMenu"
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/settings"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+        <!-- <ImageView
+             android:id="@+id/shareit"
+             android:visibility="invisible"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_gravity="right"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="16dp"
+             android:src="@drawable/sharing" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- A CardView that contains a TextView -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                card_view:cardBackgroundColor="#2b80f5"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anti-Theft"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/alarmSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="Enabling Anti-Theft, you can track your lockscreen activities. If someone tries to unlock your phone by wrong password/ pattern / pin, you will get picture captured by camera"/>
+
+                    <TextView
+                        android:id="@+id/content1.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="picture from camera and device location will be sent to your registered email id as well as play alarm to alert you."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                card_view:cardBackgroundColor="#0e8a72"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8"
+                android:layout_below="@+id/card_view">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Movement Alert"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/lockSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="It will notify you whenever your phone is being moved. "/>
+
+
+                    <TextView
+                        android:id="@+id/content2.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="It will alert you when your phone is kept somewhere and someone is trying to move it. Application will play alarm to alert you."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                card_view:cardBackgroundColor="#2ab8f6"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8"
+                android:layout_below="@+id/card_view2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unlock SMS Alert"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title3"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/contactSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="If someone tries to unlock your phone by wrong password/ pattern / pin, you will get SMS alert on your registered mobile number."/>
+
+
+                    <TextView
+                        android:id="@+id/content3.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="Note:- Carrier SMS charges will apply."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view4"
+                card_view:cardBackgroundColor="#244f58"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8"
+                android:layout_below="@+id/card_view3">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unplug Charger Alert"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title4"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/messageSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="It helps you to get alert if charging unplugged or charging interrupted, if someone disconnects the charger of your phone, Application will alert you with alarm."/>
+
+
+                    <TextView
+                        android:id="@+id/content4.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="Send “ALARM START” SMS from your alternate device to your phone, Once this device receive the SMS, it will start alarm automatically."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

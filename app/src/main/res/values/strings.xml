@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Demo5App</string>
+
+    <string name="booster">Booster</string>
+    <string name="protect_data">Protect Data</string>
+    <string name="tracking">Track Recover</string>
+    <string name="backup">Backup</string>
+    <string name="site_bloker">Secure Browser</string>
+    <string name="blocker">Anti Theft</string>
+    <string name="app_blocker">App Analizier</string>
+    <string name="ExtraSecure">Extra Secure</string>
+    <string name="SecureBrowser">Secure Browser</string>
+    <string name="NotificationManager">Notification Manager</string>
+    <string name="app_locker">Locker</string>
+
+</resources>

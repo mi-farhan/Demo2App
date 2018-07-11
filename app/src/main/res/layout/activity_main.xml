@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="com.thedeveloperworldisyours.carouselviewpager.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bgcolor"
+        android:layout_width="match_parent"
+        android:layout_height="430sp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="@drawable/rounded_corner">
+
+    </LinearLayout>
+
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/screen_anim30"
+            android:scaleType="fitXY"/>
+<!--
+        <TextView
+            android:id="@+id/tv_textView1"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="Scan Now"/>-->
+
+        <!--<Button
+            android:id="@+id/btn_scann"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scann Now"/>-->
+
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_circularImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="190dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tajmahal"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1dp" />-->
+
+        
+    </RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_main_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.rd.PageIndicatorView
+        android:id="@+id/tutorial_activity_page_indicator_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        attrs:piv_animationType="drop"
+        attrs:piv_dynamicCount="true"
+        attrs:piv_interactiveAnimation="true"
+        attrs:piv_padding="16dp"
+        attrs:piv_radius="8dp"
+        attrs:piv_selectedColor="@color/colorAccent"
+        attrs:piv_unselectedColor="@color/colorPrimaryDark"
+        attrs:piv_viewPager="@id/activity_main_view_pager" />
+
+</RelativeLayout>

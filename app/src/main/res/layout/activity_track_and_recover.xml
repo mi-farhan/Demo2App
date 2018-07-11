@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TrackAndRecover">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3385ff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="6dp"
+
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <TextView
+                android:id="@+id/toolberdashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/tracking"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:textColor="#FFF"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/esMenu"
+                android:layout_marginTop="2dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/settings"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+        <!-- <ImageView
+             android:id="@+id/shareit"
+             android:visibility="invisible"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_gravity="right"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="16dp"
+             android:src="@drawable/sharing" />-->
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- A CardView that contains a TextView -->
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                card_view:cardBackgroundColor="#3385ff"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Track and Recover"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/alarmSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="By setting this option to enabled, you can locate your phone, if in case it is lost or misplaced."/>
+
+                    <TextView
+                        android:id="@+id/content1.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="Application will send the SMS of device current location of every 30 minutes at your registered mobile number."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                card_view:cardBackgroundColor="#0e8a72"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="17dp"
+                android:alpha="0.8"
+                android:layout_below="@+id/card_view">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/title2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SIM Card Security"
+                            android:gravity="center"
+                            android:textColor="#ffff"
+                            android:textSize="25dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginLeft="19dp"
+                            android:layout_marginBottom="15dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="-----------------------------------------------------------------------------"
+                            android:textSize="15dp"
+                            android:textColor="#ffff"
+                            android:layout_below="@+id/title2"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"/>
+                        <Switch
+                            android:id="@+id/lockSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginTop="22dp"/>
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="For authentication each SIM on device, user has to make a SIM as default SIM. If anyone extract your SIM and put other SIM."/>
+
+
+                    <TextView
+                        android:id="@+id/content2.1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_margin="15dp"
+                        android:textColor="#ffff"
+                        android:text="Application will automatically fetch the new SIM information and send you through the SMS at your registered mobile number."/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
